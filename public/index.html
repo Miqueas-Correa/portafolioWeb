@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio Web Miqueas Correa</title>
+    <link rel="stylesheet" href="src\css\estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Miqueas Correa</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#proyectos" onclick="seleccionar()">PROYECTOS</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/perfil.png" alt="">
+            </div>
+            <h1>Miqueas Correa</h1>
+            <h2>Tecnicatura Universitaria En Programación - Programador Junior</h2>
+            <div class="redes">
+                <a href="https://github.com/Miqueas-Correa" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href=" https://www.linkedin.com/in/miqueas-correa-4a1509318/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p>Hola, soy programador junior y estudio en la UTN de Bahía Blanca. Me encanta la tecnología y todo lo que se puede crear con ella. Estoy siempre buscando nuevos desafíos que me ayuden a seguir aprendiendo y creciendo, mientras intento aportar mi granito de arena para mejorar el mundo, aunque sea un poco.
+                En el último tiempo estuve trabajando en varios proyectos personales que me entusiasmaron mucho: un reproductor de música, una app de gestión y otra pensada especialmente para un gimnasio. Cada uno me dejó algo distinto y me ayudó a poner en práctica lo que voy aprendiendo.
+                Me gusta seguir explorando, meterme en cosas nuevas y aprender haciendo. Siento que recién empiezo en este camino, pero tengo muchas ganas y curiosidad por todo lo que viene</p>
+            <div class="fila">
+                <!-- DATOS PERSONALES -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños: </strong>
+                            09-08-2004
+                        </li>
+                        <li>
+                            <strong>Teléfono: </strong>
+                            +54 9 2914439242
+                        </li>
+                        <li>
+                            <strong>Email: </strong>
+                            miki.mate.tiizi@gmail.com
+                        </li>
+                        <li>
+                            <strong>ubicacion</strong>
+                            Bahia Blanca/ Buenos Aires/ Argentina
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- INTERECESS -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a href="" class="btn-cv">
+                    Descargar CV <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso javascript">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso htmlcss">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Java</span>
+                        <div class="barra-skill">
+                            <div class="progreso java">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>C++</span>
+                        <div class="barra-skill">
+                            <div class="progreso c_mas_mas">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dart</span>
+                        <div class="barra-skill">
+                            <div class="progreso dart">
+                                <span>77%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso python">
+                                <span>83%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>C#</span>
+                        <div class="barra-skill">
+                            <div class="progreso c_numeral">
+                                <span>77%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso comunicacion">
+                                <span>88%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso trabajo">
+                                <span>76%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso creatividad">
+                                <span>92%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso dedicacion">
+                                <span>87%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso proyect">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Idioma</span>
+                        <div class="barra-skill">
+                            <div class="progreso idioma">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Técnico en Programacion</h4>
+                        <span class="casa">Universidad Tecnológica Nacional (UTN)</span>
+                        <span class="fecha">2022 - 2025</span>
+                        <p>Formación en desarrollo de software, estructuras de datos, bases de datos y sistemas web/móviles. Adquirí conocimientos en lenguajes como Java, JavaScript, Dart y Python, así como en el uso de frameworks como Spring Boot, Flutter y Flask.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <!-- <div class="item izq">
+                        <h4>Curso de Inglés</h4>
+                        <span class="casa">At Home School of English / Inglés GO</span>
+                        <span class="fecha">2017 - Actualidad</span>
+                        <p>Desarrollo de habilidades avanzadas en comprensión y comunicación en inglés, lo que me permite leer documentación técnica, trabajar con equipos internacionales y manejar metodologías ágiles en un entorno bilingüe.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div> -->
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Repositor en supermercado</h4>
+                        <span class="casa">supermercado la estrella</span>
+                        <span class="fecha">2021 - 2022</span>
+                        <p>Reposicion de mercaderia</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Limieza</h4>
+                        <span class="casa">Bronx Factory</span>
+                        <span class="fecha">2022 - 2022</span>
+                        <p>Limpieza del lugar</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION proyectos -->
+    <section id="proyectos" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PROYECTOS</h2>
+            <div class="galeria">
+                <a href="https://github.com/Miqueas-Correa/springBoot_demo" target="_blank" rel="noopener noreferrer">
+                    <div class="proyecto">
+                        <img src="img/f2_bancoo_resized.png" alt="">
+                        <div class="overlay">
+                            <h3>Api Rest</h3>
+                            <p>Simulacion de un Sistema Bancario</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://github.com/Miqueas-Correa/AppMobile" target="_blank" rel="noopener noreferrer">
+                    <div class="proyecto">
+                        <img src="img/f3_app_movil_resized.png" alt="">
+                        <div class="overlay">
+                            <h3>App Mobile</h3>
+                            <p>Aplicación de Animales</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://github.com/Miqueas-Correa/api_express_g17_tup_utn" target="_blank" rel="noopener noreferrer">
+                    <div class="proyecto">
+                        <img src="img/f1_api_animales_resized.png" alt="">
+                        <div class="overlay">
+                            <h3>Api Rest</h3>
+                            <p>Simulación de llamado de Animales para la aplicacion mobile</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://github.com/Miqueas-Correa/gym" target="_blank" rel="noopener noreferrer">
+                    <div class="proyecto">
+                        <img src="img/f4_turnos_resized.png" alt="">
+                        <div class="overlay">
+                            <h3>Pagina Web</h3>
+                            <p>Sistema de Pagos, En Proceso. PROXIMAMENTE...</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+<section id="contacto" class="contacto">
+    <div class="contenido-seccion">
+        <h2>CONTACTO</h2>
+        <div class="fila">
+            <!-- Formulario -->
+            <div class="col">
+                <form action="https://formspree.io/f/mldjwnel" method="POST">
+                    <input type="text" name="nombre" placeholder="Nombre y apellido" required>
+                    <input type="tel" name="telefono" placeholder="Número telefónico">
+                    <input type="email" name="email" placeholder="Dirección de correo" required>
+                    <input type="text" name="tema" placeholder="Tema">
+                    <textarea name="mensaje" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+                    <button type="submit">
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </form>
+                <!-- Mensaje de éxito (oculto inicialmente) -->
+                <div id="mensaje-exito" style="display:none; color:#1CB698; text-align:center; margin-top:20px; padding:10px; border:1px solid #1CB698; border-radius:5px;">
+                    Tú mensaje ha sido enviado correctamente.
+                </div>
+            </div>
+            <!-- Mapa -->
+            <div class="col">
+                <img src="img/ubicacion.png" alt="">
+                <div class="info">
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Bahia Blanca/ Buenos Aires/ Argentina
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-mobile-screen"></i>
+                            telefono: +54 291-4439242
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            Email: miki.mate.tizi@gmail.com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <p class="copyright">&copy; 2025 Miqueas Correa | Desarrollo Web | Diseñado y desarrollado con JS, HTML & CSS</p>
+    </footer>
+
+    <script src="src/js/script.js"></script>
+</body>
+</html>
