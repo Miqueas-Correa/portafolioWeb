@@ -1,20 +1,37 @@
 document.addEventListener('DOMContentLoaded', () => {
     const $form = document.querySelector('#form');
-    $form.addEventListener('submit', handleSubmit);
+    const $spinner = document.querySelector('#spinner');
 
-    async function handleSubmit(event) {
+    $form.addEventListener('submit', async function (event) {
         event.preventDefault();
+
+        // Mostrar el spinner
+        $spinner.style.display = 'block';
+
         const form = new FormData(this);
-        const response = await fetch(this.action, {
-            method: this.method,
-            body: form,
-            headers: {
-                'Accept': 'application/json'
+
+        try {
+            const response = await fetch(this.action, {
+                method: this.method,
+                body: form,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+
+            if (response.ok) {
+                this.reset();
+                alert('Gracias por contactarme, te contestaré a la brevedad posible');
+            } else {
+                alert('Ocurrió un error al enviar el formulario.');
             }
-        });
-        if (response.ok) {
-            this.reset();
-            alert('Gracias por contactarme, te contestaré a la brevedad posible');
+
+        } catch (error) {
+            console.error('Error al enviar el formulario:', error);
+            alert('Error de conexión. Por favor, intenta nuevamente.');
+        } finally {
+            // Ocultar el spinner
+            $spinner.style.display = 'none';
         }
-    }
+    });
 });
