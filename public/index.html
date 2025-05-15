@@ -7,42 +7,35 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portfolio Web Miqueas Correa</title>
     <link rel="stylesheet" href="src\css\estilo.css">
+    <link rel="icon" href="assent\img\silueta.png" type="image/png">
 </head>
 <body>
     <!-- MENU ENCABEZADO -->
     <div class="contenedor-header">
         <header>
-            <div class="logo">
-                <a href="#">Miqueas Correa</a>
-            </div>
             <nav id="nav">
                 <ul>
                     <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
                     <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
                     <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
                     <li><a href="#proyectos" onclick="seleccionar()">PROYECTOS</a></li>
                     <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
-                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
                 </ul>
             </nav>
-            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
-                <i class="fa-solid fa-bars"></i>
-            </div>
         </header>
     </div>
 
     <!-- SECCION INICIO -->
     <section id="inicio" class="inicio">
-        <div class="contenido-banner">
-            <div class="contenedor-img">
-                <img src="img/perfil.png" alt="">
-            </div>
-            <h1>Miqueas Correa</h1>
-            <h2>Tecnicatura Universitaria En Programación - Programador Junior</h2>
-            <div class="redes">
-                <a href="https://github.com/Miqueas-Correa" target="_blank" rel="noopener noreferrer">github<i class="fa-brands fa-github"></i></a>
-                <a href=" https://www.linkedin.com/in/miqueas-correa-4a1509318/" target="_blank" rel="noopener noreferrer">linkedin<i class="fa-brands fa-linkedin-in"></i></a>
-            </div>
+        <div class="contenedor-img">
+            <img src="assent/img/yo.jpeg" alt="">
+        </div>
+        <h1>Miqueas Correa</h1>
+        <h2>Tecnicatura Universitaria En Programación - Programador Junior</h2>
+        <div class="redes">
+            <a href="https://github.com/Miqueas-Correa" target="_blank" rel="noopener noreferrer">github <i class="fa-brands fa-github"></i></a>
+            <a href=" https://www.linkedin.com/in/miqueas-correa-4a1509318/" target="_blank" rel="noopener noreferrer">linkedin <i class="fa-brands fa-linkedin-in"></i></a>
         </div>
     </section>
 
@@ -56,27 +49,25 @@
                 Siento que recién estoy empezando en este camino, pero tengo curiosidad, motivación y muchas ganas de seguir creciendo y enfrentando nuevos desafíos.</p>
             <div class="fila">
                 <!-- DATOS PERSONALES -->
-                <div class="col">
-                    <h3>Datos Personales</h3>
-                    <ul>
-                        <li>
-                            <strong>Nacimiento: </strong>
-                            09-08-2004
-                        </li>
-                        <li>
-                            <strong>Teléfono: </strong>
-                            +54 9 2914439242
-                        </li>
-                        <li>
-                            <strong>Email: </strong>
-                            miki.mate.tiizi@gmail.com
-                        </li>
-                        <li>
-                            <strong>ubicacion</strong>
-                            Bahia Blanca/ Buenos Aires/ Argentina
-                        </li>
-                    </ul>
-                </div>
+                <h3>Datos Personales</h3>
+                <ul>
+                    <li>
+                        <strong>Nacimiento: </strong>
+                        09-08-2004
+                    </li>
+                    <li>
+                        <strong>Teléfono: </strong>
+                        +54 9 2914439242
+                    </li>
+                    <li>
+                        <strong>Email: </strong>
+                        miki.mate.tiizi@gmail.com
+                    </li>
+                    <li>
+                        <strong>ubicacion</strong>
+                        Bahia Blanca/ Buenos Aires/ Argentina
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
@@ -85,74 +76,112 @@
     <section class="skills" id="skills">
         <div class="contenido-seccion">
             <h2>Habilidades</h2>
-            <div class="fila">
                 <!-- Technical Skill -->
-                <div class="col">
-                    <h3>LENGUAJES, FRAMEWORKS Y ENTORNOS DE EJECUCION</h3>
+                <h3>LENGUAJES, FRAMEWORKS Y MAS</h3>
+                <div class="skills-container">
                     <div class="skill">
-                        <img src="public\assent\img\javascript-logo.png" alt="">
-                        <span>Javascript</span>
+                        <img src="assent\img\javascript-logo.png" alt="">
+                        <p>Javascript</p>
                     </div>
                     <div class="skill">
-                        <img src="public\assent\img\java.png" alt="">
-                        <span>Java</span>
+                        <img src="assent\img\java.png" alt="">
+                        <p>Java</p>
                     </div>
                     <div class="skill">
-                        <img src="public\assent\img\dart.png" alt="">
-                        <span>Dart</span>
+                        <img src="assent\img\dart.png" alt="">
+                        <p>Dart</p>
                     </div>
                     <div class="skill">
-                        <img src="public\assent\img\python.png" alt="">
-                        <span>Python</span>
+                        <img src="assent\img\python.png" alt="">
+                        <p>Python</p>
                     </div>
                     <div class="skill">
-                        <img src="public\assent\img\html.png" alt="">
-                        <span>HTML</span>
+                        <img src="assent\img\html.png" alt="">
+                        <p>HTML</p>
                     </div>
                     <div class="skill">
-                        <img src="public\assent\img\css.png" alt="">
-                        <span>CSS</span>
+                        <img src="assent\img\css.png" alt="">
+                        <p>CSS</p>
                     </div>
                     <div class="skill">
-                        <img src="public\assent\img\flutter.png" alt="">
-                        <span>Flutter</span>
+                        <img src="assent\img\flutter.png" alt="">
+                        <p>Flutter</p>
                     </div>
                     <div class="skill">
-                        <img src="public\assent\img\flask.png" alt="">
-                        <span>Flask</span>
+                        <img src="assent\img\flask.png" alt="">
+                        <p>Flask</p>
                     </div>
                     <div class="skill">
-                        <img src="public\assent\img\nodejs.png" alt="">
-                        <span>Node.js</span>
+                        <img src="assent\img\nodejs.png" alt="">
+                        <p>Node.js</p>
                     </div>
                     <div class="skill">
-                        <img src="public\assent\img\express.png" alt="">
-                        <span>Express</span>
+                        <img src="assent\img\express.png" alt="">
+                        <p>Express</p>
+                    </div>
+                    <div class="skill">
+                        <img src="assent\img\springboot.png" alt="">
+                        <p>Spring Boot</p>
+                    </div>
+                    <div class="skill">
+                        <img src="assent\img\spring.png" alt="">
+                        <p>Spring</p>
+                    </div>
+                    <div class="skill">
+                        <img src="assent\img\mysql.png" alt="">
+                        <p>MySQL</p>
+                    </div>
+                    <div class="skill">
+                        <img src="assent\img\maven.png" alt="">
+                        <p>Maven</p>
                     </div>
                 </div>
                 <!-- Professional Skills -->
-                <div class="col">
-                    <h3>Professional Skills</h3>
+                <h3>Professional Skills</h3>
+                <div class="skills-container">
                     <div class="skill">
-                        <span>Comunicación</span>
+                        <p>Comunicación</p>
                     </div>
                     <div class="skill">
-                        <span>Trabajo en Equipo</span>
+                        <p>Trabajo en equipo</p>
                     </div>
                     <div class="skill">
-                        <span>Creatividad</span>
+                        <p>Aprendizaje continuo</p>
                     </div>
                     <div class="skill">
-                        <span>Dedicación</span>
+                        <p>Scrum</p>
                     </div>
                     <div class="skill">
-                        <span>Proyect Management</span>
+                        <p>Resolución de problemas</p>
                     </div>
                     <div class="skill">
-                        <span>Idioma</span>
+                        <p>Comunicación efectiva</p>
+                    </div>
+                    <div class="skill">
+                        <p>Creatividad</p>
+                    </div>
+                    <div class="skill">
+                        <p>Dedicación</p>
+                    </div>
+                    <div class="skill">
+                        <p>Aplicaciones</p>
+                    </div>
+                    <div class="skill">
+                        <p>API</p>
+                    </div>
+                    <div class="skill">
+                        <p>Desarrollo movil/web</p>
+                    </div>
+                    <div class="skill">
+                        <p>Scrum</p>
+                    </div>
+                    <div class="skill">
+                        <p>Tests</p>
+                    </div>
+                    <div class="skill">
+                        <p>Ingles (estudiando)</p>
                     </div>
                 </div>
-            </div>
         </div>
     </section>
 
@@ -195,7 +224,7 @@
                         </div>
                     </div>
                     <div>
-                        <a href="" class="btn-cv">
+                        <a href="assent\cv\miqueas_correa.pdf" download="miqueas_correa_cv.pdf" class="btn-cv">
                             Descargar CV <i class="fa-solid fa-download"></i>
                             <span class="overlay"></span>
                         </a>
@@ -212,38 +241,26 @@
             <div class="galeria">
                 <a href="https://github.com/Miqueas-Correa/springBoot_demo" target="_blank" rel="noopener noreferrer">
                     <div class="proyecto">
-                        <img src="img/f2_bancoo_resized.png" alt="">
-                        <div class="overlay">
                             <h3>Api Rest</h3>
                             <p>Simulacion de un Sistema Bancario</p>
-                        </div>
                     </div>
                 </a>
                 <a href="https://github.com/Miqueas-Correa/AppMobile" target="_blank" rel="noopener noreferrer">
                     <div class="proyecto">
-                        <img src="img/f3_app_movil_resized.png" alt="">
-                        <div class="overlay">
                             <h3>App Mobile</h3>
                             <p>Aplicación de Animales</p>
-                        </div>
                     </div>
                 </a>
                 <a href="https://github.com/Miqueas-Correa/api_express_g17_tup_utn" target="_blank" rel="noopener noreferrer">
                     <div class="proyecto">
-                        <img src="img/f1_api_animales_resized.png" alt="">
-                        <div class="overlay">
                             <h3>Api Rest</h3>
                             <p>Simulación de llamado de Animales para la aplicacion mobile</p>
-                        </div>
                     </div>
                 </a>
                 <a href="https://github.com/Miqueas-Correa/gym" target="_blank" rel="noopener noreferrer">
                     <div class="proyecto">
-                        <img src="img/f4_turnos_resized.png" alt="">
-                        <div class="overlay">
                             <h3>Pagina Web</h3>
                             <p>Sistema de Pagos, En Proceso. PROXIMAMENTE...</p>
-                        </div>
                     </div>
                 </a>
             </div>
@@ -251,38 +268,29 @@
     </section>
 
     <!-- SECCION CONTACTO -->
-<section id="contacto" class="contacto">
-    <div class="contenido-seccion">
-        <h2>CONTACTO</h2>
-        <div class="fila">
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
             <!-- Formulario -->
-            <div class="col">
-                <form id="form" action="https://formspree.io/f/xpwddano" method="POST">
-                    <input type="text" name="nombre" placeholder="Nombre y apellido" required>
-                    <input type="tel" name="telefono" placeholder="Número telefónico">
-                    <input type="email" name="email" placeholder="Dirección de correo" required>
-                    <input type="text" name="tema" placeholder="Tema">
-                    <textarea name="mensaje" cols="30" rows="10" placeholder="Mensaje" required></textarea>
-                    <button type="submit">
-                        Enviar mensaje por correo <i class="fa-solid fa-paper-plane"></i>
-                        <span class="overlay"></span>
-                    </button>
-                    <!-- Spinner de carga -->
-                    <div id="spinner" class="spinner"></div>
-                </form>
-            </div>
+            <form id="form" action="https://formspree.io/f/xpwddano" method="POST">
+                <input type="text" name="nombre" placeholder="Nombre y apellido" required>
+                <input type="tel" name="telefono" placeholder="Número telefónico">
+                <input type="email" name="email" placeholder="Dirección de correo" required>
+                <input type="text" name="tema" placeholder="Tema">
+                <textarea name="mensaje" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+                <button type="submit">
+                    Enviar mensaje por correo <i class="fa-solid fa-paper-plane"></i>
+                    <span class="overlay"></span>
+                </button>
+                <!-- Spinner de carga -->
+                <div id="spinner" class="spinner"></div>
+            </form>
         </div>
-    </div>
-</section>
-
+    </section>
 
     <!-- footer -->
     <footer>
-        <a href="#inicio" class="arriba">
-            Inicio
-            <i class="fa-solid fa-angles-up"></i>
-        </a>
-        <p class="copyright">&copy; 2025 Miqueas Correa | Desarrollo Web | Diseñado y desarrollado con JS, HTML & CSS</p>
+        <p>&copy; 2025 Miqueas Correa | Desarrollo Web | Diseñado y desarrollado con JS, HTML & CSS</p>
     </footer>
 
     <script src="src/js/script.js"></script>
