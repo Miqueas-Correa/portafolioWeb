@@ -1,7 +1,7 @@
 # portafolioWeb
 Un portafolio personal en una pagina web
 
-# URL: https://portafolio-6rgpzs2u1-miqueas-correas-projects.vercel.app/#proyectos
+# URL: https://portafolio-p6wmflupb-miqueas-correas-projects.vercel.app/#inicio
 
 # Pasos para subir tu proyecto con Vercel:
 
@@ -54,3 +54,5 @@ Cada vez que realices un cambio, simplemente ejecuta:
 vercel --prod
 
 Compatible con HTML, CSS, JS y frameworks como Next.js.
+
+# DATO IMPORTANTE A TENER EN CUENTA A LA HORA DE ACTUALIZAR: Cuando se ejecuta el comando en la terminal para actualizar se generara una nueva URL
